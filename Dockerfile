@@ -7,6 +7,7 @@ RUN dotnet restore
 
 # copy everything else and build
 COPY . ./
+RUN apt-get update && apt-get install -y libcurl3
 RUN dotnet publish -c Release -o out
 
 # build runtime image
