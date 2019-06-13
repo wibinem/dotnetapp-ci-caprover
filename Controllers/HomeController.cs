@@ -15,14 +15,14 @@ namespace aspnetapp.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Halaman Deskripsi About.";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Halaman Kontak Anda.";
 
             return View();
         }
